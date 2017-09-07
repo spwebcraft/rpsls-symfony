@@ -1,0 +1,6 @@
+services:
+    user.registration_listener:
+        class: DataBundle\EventListener\RegistrationListener
+        arguments: []
+        tags:
+            - { name: kernel.event_subscriber }
